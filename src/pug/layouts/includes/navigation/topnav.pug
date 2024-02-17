@@ -2,7 +2,7 @@ nav.sb-topnav.navbar.navbar-expand.navbar-dark.bg-dark
 
     // Navbar Brand
     a.navbar-brand.ps-3(href='index.html')
-        | Start Bootstrap
+        | DataVision
 
     // Sidebar Toggle
     button#sidebarToggle.btn.btn-link.btn-sm.order-1.order-lg-0.me-4.me-lg-0(href='#!')
@@ -11,7 +11,12 @@ nav.sb-topnav.navbar.navbar-expand.navbar-dark.bg-dark
     // Navbar Search
     form.d-none.d-md-inline-block.form-inline.ms-auto.me-0.me-md-3.my-2.my-md-0
         .input-group
-            input.form-control(type='text', placeholder='Search for...', aria-label='Search for...', aria-describedby='btnNavbarSearch')
+            input.form-control(type='text', placeholder='Pesquisar... '
+                data-bs-toggle='tooltip', data-placement='bottom',
+                aria-label='Pesquisar... ',
+                aria-describedby='btnNavbarSearch',
+                title='escolha um termo para pesquisar'
+            )
             button#btnNavbarSearch.btn.btn-primary(type='button')
                 i.fas.fa-search
 
@@ -22,11 +27,11 @@ nav.sb-topnav.navbar.navbar-expand.navbar-dark.bg-dark
                 i.fas.fa-user.fa-fw
             ul.dropdown-menu.dropdown-menu-end(aria-labelledby='navbarDropdown')
                 li
-                    a.dropdown-item(href='#!') Settings
+                    a.dropdown-item(href='#!') Configurações
                 li
-                    a.dropdown-item(href='#!') Activity Log
+                    a.dropdown-item(href='#!') Mensagens
                 li
                     hr.dropdown-divider
                 li
-                    a.dropdown-item(href='#!') Logout
+                    a.dropdown-item(href='#!') Sair
 

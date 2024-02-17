@@ -10971,6 +10971,10 @@ body {
 .sb-topnav.navbar-light #sidebarToggle {
   color: #212529;
 }
+.sb-topnav .dropdown-menu li a:hover {
+  background-color: #0e6ef8;
+  color: #ffffff;
+}
 
 .sb-sidenav {
   display: flex;
