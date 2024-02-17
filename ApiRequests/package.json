@@ -2,18 +2,21 @@
   "name": "apirequests",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npx tsc --watch",
-    "start": "find . -path './node_modules' -prune -o -wholename '*/**/*.js' -exec node {} +"
+    "start": "find . -path './node_modules' -prune -o -wholename '*.js' -exec node {} +",
+    "verific": "node --watch main.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/request": "^2.48.12",
     "axios": "^1.6.7"
   },
   "dependencies": {
-    "dotenv": "^16.4.4"
+    "dotenv": "^16.4.4",
+    "request": "^2.88.2"
   }
 }
